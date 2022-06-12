@@ -25,4 +25,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "mrh"
-include(":app")
+include(
+    ":app",
+    ":data",
+    ":domain"
+)
