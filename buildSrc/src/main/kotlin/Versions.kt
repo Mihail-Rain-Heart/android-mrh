@@ -9,6 +9,6 @@ object Versions {
     }
 
     object Dagger {
-        const val dagger = "2.28.3"
+        const val dagger = "2.38.1"
     }
 }

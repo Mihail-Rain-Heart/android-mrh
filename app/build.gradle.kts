@@ -21,8 +21,8 @@ android {
         release {
             isMinifyEnabled = Config.Release.minifyEnabled
             proguardFiles(
-                    getDefaultProguardFile(Config.Release.Proguard.name),
-                    Config.Release.Proguard.rules
+                getDefaultProguardFile(Config.Release.Proguard.name),
+                Config.Release.Proguard.rules
             )
         }
     }
