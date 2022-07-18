@@ -40,6 +40,15 @@ dependencies {
     implementation(Dependencies.Default.core)
     implementation(Dependencies.Default.appCompat)
     implementation(Dependencies.Default.material)
+    //Activity
+    implementation(Dependencies.Lifecycle.activity)
+    //Fragment
+    implementation(Dependencies.Lifecycle.fragment)
+    // ViewModel
+    implementation(Dependencies.Lifecycle.viewModel)
+    // Lifecycle
+    implementation(Dependencies.Lifecycle.lifecycle)
+    kapt(Dependencies.Lifecycle.lifecycleCompiler)
     //DI
     implementation(Dependencies.Dagger.dagger)
     kapt(Dependencies.Dagger.compiler)

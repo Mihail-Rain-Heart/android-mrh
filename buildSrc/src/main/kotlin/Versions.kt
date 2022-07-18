@@ -11,4 +11,9 @@ object Versions {
     object Dagger {
         const val dagger = "2.38.1"
     }
+
+    object Lifecycle {
+        const val lifecycle = "2.2.0"
+        const val activity = "1.5.0"
+    }
 }
