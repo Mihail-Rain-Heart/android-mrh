@@ -6,13 +6,13 @@ import com.android.mrh.di.DaggerAppComponent
 
 class App : Application() {
 
-    lateinit var appComponent: AppComponent
+    val appComponent by lazy<AppComponent> {
+        DaggerAppComponent
+            .builder()
+            .build()
+    }
 
     override fun onCreate() {
         super.onCreate()
-
-        appComponent = DaggerAppComponent
-            .builder()
-            .build()
     }
 }

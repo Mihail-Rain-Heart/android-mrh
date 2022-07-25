@@ -1,7 +1,7 @@
 package com.android.mrh.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.android.mrh.MainActivity
+import com.android.mrh.presentation.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 

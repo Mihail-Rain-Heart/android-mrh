@@ -2,7 +2,7 @@ package com.android.mrh.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.android.mrh.TestViewModel
+import com.android.mrh.presentation.MainViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -14,6 +14,6 @@ interface ViewModelModule {
     @Binds
     fun factory(factory: ViewModelFactory): ViewModelProvider.Factory
 
-    @[Binds IntoMap ViewModelKey(TestViewModel::class)]
-    fun provideTestViewModel(testViewModel: TestViewModel): ViewModel
+    @[Binds IntoMap ViewModelKey(MainViewModel::class)]
+    fun provideTestViewModel(mainViewModel: MainViewModel): ViewModel
 }
