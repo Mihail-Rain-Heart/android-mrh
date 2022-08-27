@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = Config.Kotlin.Options.jvmTarget
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -49,9 +53,14 @@ dependencies {
     // Lifecycle
     implementation(Dependencies.Lifecycle.lifecycle)
     kapt(Dependencies.Lifecycle.lifecycleCompiler)
-    //DI
+    // DI
     implementation(Dependencies.Dagger.dagger)
     kapt(Dependencies.Dagger.compiler)
+
+    // Navigation
+    implementation(Dependencies.Navigation.navFragment)
+    implementation(Dependencies.Navigation.navUi)
+
     // Тесты
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)

@@ -16,4 +16,8 @@ object Versions {
         const val lifecycle = "2.2.0"
         const val activity = "1.5.0"
     }
+
+    object Navigation {
+        const val version = "2.5.1"
+    }
 }
