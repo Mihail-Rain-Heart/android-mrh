@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         binding?.let {
             setupToolbar(it, navController)
+            setupBottomBar(it, navController)
         }
     }
 
@@ -44,5 +45,10 @@ class MainActivity : AppCompatActivity() {
                 navController = navController,
                 configuration = AppBarConfiguration(navController.graph)
             )
+        }
+
+    private fun setupBottomBar(binding: ActivityMainBinding, navController: NavController) =
+        with(binding) {
+            bottomNav.setupWithNavController(navController = navController)
         }
 }
