@@ -4,8 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.android.mrh.R
 import com.android.mrh.databinding.FragmentMainBinding
 import com.android.mrh.presentation.BaseFragment
 
@@ -20,9 +18,6 @@ class MainFragment : BaseFragment<FragmentMainBinding>() {
         savedInstanceState: Bundle?
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        binding.goNext.setOnClickListener {
-            findNavController().navigate(R.id.to_SecondFragment)
-        }
         return binding.root
     }
 }

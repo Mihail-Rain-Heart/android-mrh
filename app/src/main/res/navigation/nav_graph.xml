@@ -10,13 +10,4 @@
         android:name="com.android.mrh.presentation.main.MainFragment"
         tools:layout="@layout/fragment_main" />
 
-    <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.android.mrh.presentation.main.SecondFragment"
-        tools:layout="@layout/second_fragment" />
-
-    <action
-        android:id="@+id/to_SecondFragment"
-        app:destination="@id/secondFragment" />
-
 </navigation>
