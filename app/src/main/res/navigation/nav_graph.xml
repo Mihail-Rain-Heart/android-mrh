@@ -10,4 +10,13 @@
         android:name="com.android.mrh.presentation.main.MainFragment"
         tools:layout="@layout/fragment_main" />
 
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android.mrh.presentation.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <action
+        android:id="@+id/to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+
 </navigation>
