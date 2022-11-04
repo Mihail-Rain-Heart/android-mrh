@@ -22,6 +22,10 @@ object Config {
         }
     }
 
+    object Namespace {
+        const val Core = "com.mrh.core"
+    }
+
     // Конфиги билд вариантов
     object Release {
         const val minifyEnabled = false

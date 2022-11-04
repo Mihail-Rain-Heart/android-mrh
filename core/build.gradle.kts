@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace = Config.Namespace.Core
     compileSdk = Config.Sdk.compile
 
     defaultConfig {
@@ -33,6 +34,10 @@ android {
 }
 
 dependencies {
+
+    implementation(Dependencies.Default.core)
+    implementation(Dependencies.Default.appCompat)
+    implementation(Dependencies.Default.material)
 
     // Тесты
     testImplementation(Dependencies.Test.junit)

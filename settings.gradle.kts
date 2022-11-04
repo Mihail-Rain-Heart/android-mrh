@@ -27,6 +27,5 @@ dependencyResolutionManagement {
 rootProject.name = "mrh"
 include(
     ":app",
-    ":data",
-    ":domain"
+    ":core"
 )

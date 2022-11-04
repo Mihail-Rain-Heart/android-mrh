@@ -1,4 +1,4 @@
-package com.android.data
+package com.mrh.core
 
 import org.junit.Test
 
