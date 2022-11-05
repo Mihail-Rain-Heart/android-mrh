@@ -41,6 +41,9 @@ android {
 
 dependencies {
 
+    // Модули приложения
+    implementation(project(":core"))
+
     implementation(Dependencies.Default.core)
     implementation(Dependencies.Default.appCompat)
     implementation(Dependencies.Default.material)

@@ -23,6 +23,6 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_gravity="top|start"
         tools:itemCount="10"
-        tools:listitem="@layout/item_base" />
+        tools:listitem="@layout/item_base_field" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

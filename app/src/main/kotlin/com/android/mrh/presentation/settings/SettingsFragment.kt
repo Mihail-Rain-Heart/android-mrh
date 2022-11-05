@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.android.mrh.databinding.FragmentSettingsBinding
 import com.android.mrh.presentation.BaseFragment
-import com.android.mrh.utils.baseAdapter.BaseAdapter
-import com.android.mrh.utils.baseAdapter.BaseItem
+import core.view.adapter.BaseAdapter
+import core.view.adapter.items.BaseItem
 
 class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
 
@@ -24,7 +24,7 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
         super.onCreateView(inflater, container, savedInstanceState)
         binding.items.adapter = adapter
         adapter.submitList(
-            (1..10).map { BaseItem.Test }
+            (1..10).map { BaseItem.Field }
         )
         return binding.root
     }
