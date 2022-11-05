@@ -7,7 +7,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id.startsWith("com.android")) {
-                useModule("com.android.tools.build:gradle:7.1.3")
+                useModule("com.android.tools.build:gradle:7.2.1")
             }
 
             if (requested.id.id.startsWith("org.jetbrains.kotlin")) {
@@ -27,6 +27,5 @@ dependencyResolutionManagement {
 rootProject.name = "mrh"
 include(
     ":app",
-    ":data",
-    ":domain"
+    ":core"
 )

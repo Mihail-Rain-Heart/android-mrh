@@ -1,18 +1,16 @@
 plugins {
-    id(Dependencies.Plugins.application)
+    id(Dependencies.Plugins.library)
     id(Dependencies.Plugins.kotlin)
-    id(Dependencies.Plugins.kapt)
 }
 
 android {
+    namespace = Config.Namespace.Core
     compileSdk = Config.Sdk.compile
 
     defaultConfig {
-        applicationId = Config.applicationId
         minSdk = Config.Sdk.min
         targetSdk = Config.Sdk.target
-        versionCode = Config.Versions.code
-        versionName = Config.Versions.name
+
         // Тесты
         testInstrumentationRunner = Config.Test.instrumentationRunner
     }
@@ -41,28 +39,9 @@ android {
 
 dependencies {
 
-    // Модули приложения
-    implementation(project(":core"))
-
     implementation(Dependencies.Default.core)
     implementation(Dependencies.Default.appCompat)
     implementation(Dependencies.Default.material)
-    //Activity
-    implementation(Dependencies.Lifecycle.activity)
-    //Fragment
-    implementation(Dependencies.Lifecycle.fragment)
-    // ViewModel
-    implementation(Dependencies.Lifecycle.viewModel)
-    // Lifecycle
-    implementation(Dependencies.Lifecycle.lifecycle)
-    kapt(Dependencies.Lifecycle.lifecycleCompiler)
-    // DI
-    implementation(Dependencies.Dagger.dagger)
-    kapt(Dependencies.Dagger.compiler)
-
-    // Navigation
-    implementation(Dependencies.Navigation.navFragment)
-    implementation(Dependencies.Navigation.navUi)
 
     // Тесты
     testImplementation(Dependencies.Test.junit)
