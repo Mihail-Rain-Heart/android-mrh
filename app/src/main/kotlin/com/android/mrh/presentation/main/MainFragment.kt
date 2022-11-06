@@ -25,4 +25,6 @@ class MainFragment : BaseFragment<FragmentMainBinding>() {
         }
         return binding.root
     }
+
+    override fun setupToolbar() = binding.toolbarContainer.toolbar
 }

@@ -5,7 +5,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.android.mrh.R
 import com.android.mrh.databinding.ActivityMainBinding
@@ -29,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                 .navController
 
         binding?.let {
-            setupToolbar(it, navController)
             setupBottomBar(it, navController)
         }
     }
@@ -38,14 +36,6 @@ class MainActivity : AppCompatActivity() {
         binding = null
         super.onDestroy()
     }
-
-    private fun setupToolbar(binding: ActivityMainBinding, navController: NavController) =
-        with(binding) {
-            toolbar.setupWithNavController(
-                navController = navController,
-                configuration = AppBarConfiguration(navController.graph)
-            )
-        }
 
     private fun setupBottomBar(binding: ActivityMainBinding, navController: NavController) =
         with(binding) {
