@@ -28,4 +28,6 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>() {
         )
         return binding.root
     }
+
+    override fun setupToolbar() = binding.toolbarContainer.toolbar
 }
